@@ -14,7 +14,9 @@
     <h3>{{ tableau[0] }}</h3>
     <h3>{{ objet }}</h3>
     <h3>{{ objet.name }}</h3>
+    <h3>{{ objet["name"] }}</h3>
     <h3>{{ objet.tel }}</h3>
+    <h3>{{ objet["tel"] }}</h3>
     <h3>{{ sayhello() }}</h3>
     <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
     <div class="card-actions justify-end">
