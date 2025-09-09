@@ -27,11 +27,12 @@
 </template>
 
 <script setup lang="js">
-const chaine = "Les mémoires de Steven Seagal";
-const booleen = false;
-const nombre = 1234567890;
-const tableau = ["du texte",99]
-const objet = {"name":"COOL","tel":"060503030"}
+import {ref} from 'vue';
+const chaine = ref("Les mémoires de Steven Seagal");
+const booleen = ref(false);
+const nombre = ref(1234567890);
+const tableau = ref(["du texte",99]);
+const objet = ref({"name":"COOL","tel":"060503030"});
 function sayhello(){
   return "Hello World";
 } 
