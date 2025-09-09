@@ -18,6 +18,7 @@
     <h3>{{ objet.tel }}</h3>
     <h3>{{ objet["tel"] }}</h3>
     <h3>{{ sayhello() }}</h3>
+    <h3>{{ random() }}</h3>
     <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
     <div class="card-actions justify-end">
       <button class="btn btn-primary">Buy Now</button>
@@ -36,6 +37,16 @@ const objet = ref({"name":"COOL","tel":"060503030"});
 function sayhello(){
   return "Hello World";
 } 
+function random(){
+  // const nombre = Math.random();
+  // if (nombre < 0.5){
+  //   return 'le livre de boba fet'
+  // }
+  // else{
+  //   return 'le livre de la jungle'
+  // }
+  return nombre < 0.5 ? 'le livre de boba fet' :'le livre de la jungle';
+}
 </script>
 
 
