@@ -44,6 +44,16 @@ const router = createRouter({
             path: '/von2',
             name: 'von2',
             component: () => import('../views/tps/von2.vue')
+        },
+        {
+            path: '/bug_volontaire',
+            name: 'bug_volontaire',
+            component: () => import('../views/exercices/bug_volontaire.vue')
+        },
+        {
+            path: '/watchers',
+            name: 'watchers',
+            component: () => import('../views/exercices/exercice_watchers.vue')
         }
     ]
 });
