@@ -14,6 +14,36 @@ const router = createRouter({
             path: '/about',
             name: 'about',
             component: () => import('../views/About.vue')
+        },
+        {
+            path: '/drmario',
+            name: 'drmario',
+            component: () => import('../views/tps/databinding.vue')
+        },
+        {
+            path: '/textinterpolation',
+            name: 'textinterpolation',
+            component: () => import('../views/lecons/text-interpolation.vue')
+        },
+        {
+            path: '/attribute-binding',
+            name: 'attribute-binding',
+            component: () => import('../views/lecons/attribute-binding.vue')
+        },
+        {
+            path: '/event-binding',
+            name: 'event-binding',
+            component: () => import('../views/lecons/event-binding.vue')
+        },
+        {
+            path: '/event_von',
+            name: 'event_von',
+            component: () => import('../views/exercices/event_von.vue')
+        },
+        {
+            path: '/von2',
+            name: 'von2',
+            component: () => import('../views/tps/von2.vue')
         }
     ]
 });
