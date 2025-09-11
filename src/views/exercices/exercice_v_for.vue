@@ -15,9 +15,13 @@
                 <h3 class="text-xl font-semibold mb-2">Votre film ajouté : </h3>
             </div>
 
-            <h3 v-if="films.length" class="text-xl font-semibold mb-2">Film ajouté : {{ film }}</h3>
+            <h3 v-if="films.length" class="text-xl font-semibold mb-2">
+              <ul>
+                <li v-for="(film, index) in films">{{ index+1 }}. {{ film }}</li>
+              </ul>
+            </h3>
             <p v-else class="text-gray-500">
-                  {{ contenu }}
+                  Pas encore de films dans votre liste ? Veuillez en ajouter un.
             </p>
         </div>
     </div>
@@ -26,14 +30,12 @@
 <script setup lang='js'>
 
     import { ref } from 'vue';
+
     const films = ref([]);
     const film = ref('');
-    const contenu = ref('Pas encore de films dans votre liste ? Veuillez en ajouter un.');
+
     function ajouterFilm() {
       films.value.push(film.value);
-    }
-    
-
-    
+    }  
 
 </script>

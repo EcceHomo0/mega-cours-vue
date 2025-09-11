@@ -78,7 +78,12 @@ const router = createRouter({
         {
             path: '/exercice_v_if',
             name: 'exercice_v_if',
-            component: () => import('../views/exercices/exercice_ajout_film.vue')
+            component: () => import('../views/exercices/exercice_v_if.vue')
+        },
+        {
+            path: '/exercice_v_for',
+            name: 'exercice_v_for',
+            component: () => import('../views/exercices/exercice_v_for.vue')
         }
     ]
 });
