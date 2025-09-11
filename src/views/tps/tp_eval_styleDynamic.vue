@@ -3,7 +3,7 @@
     <input id="input1" placeholder="Entrez votre texte ici" v-model="texte"></input>
     <h2 id="h2_1" :class="[{ maClasseHello: texte === 'hello' , maClasseWorld: texte === 'world'},{invisible: estInvisible}]">Hello World (class dynamique)</h2>
     <input id="input2" placeholder="Entrez votre texte ici" v-model="couleur"></input>
-    <h2 id="h2_2" v-show="afficherTitre" :style="{ color: couleur }">Hello World (couleur dynamique)</h2>
+    <h2 id="h2_2" :style="{ color: couleur }">Hello World (couleur dynamique)</h2>
     <br></br>
     <button class="btn btn-primary" @click="visible = !visible">Afficher 1er Titre</button>
 </template>
