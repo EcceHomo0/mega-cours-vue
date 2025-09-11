@@ -4,6 +4,11 @@ import {createRouter, createWebHistory} from 'vue-router';
 const router = createRouter({
     history: createWebHistory(),
     routes: [
+          {
+            path: '/:pathMatch(.*)*',
+            name: 'NotFound',
+            component: () => import('../views/NotFoundView.vue')
+        },
         {
             path: '/',
             alias:'/home',
@@ -54,6 +59,16 @@ const router = createRouter({
             path: '/watchers',
             name: 'watchers',
             component: () => import('../views/exercices/exercice_watchers.vue')
+        },
+        {
+            path: '/dynamic-styling',
+            name: 'dynamic-styling',
+            component: () => import('../views/lecons/dynamic-styling.vue')
+        },
+        {
+            path: '/exercice_style_dynamique',
+            name: 'exercice_style_dynamique',
+            component: () => import('../views/exercices/exercice_style_dynamique.vue')
         }
     ]
 });
