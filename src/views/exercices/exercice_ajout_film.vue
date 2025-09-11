@@ -15,9 +15,8 @@
                 <h3 class="text-xl font-semibold mb-2">Votre film ajouté : </h3>
             </div>
 
-            <p class="text-gray-500">
-                <!-- Pas encore de films dans votre liste ? Veuillez en ajouter un. -->
-                 <!-- {{ films[films.length - 1] }} -->
+            <h3 v-if="films.length" class="text-xl font-semibold mb-2">Film ajouté : {{ film }}</h3>
+            <p v-else class="text-gray-500">
                   {{ contenu }}
             </p>
         </div>
@@ -32,7 +31,6 @@
     const contenu = ref('Pas encore de films dans votre liste ? Veuillez en ajouter un.');
     function ajouterFilm() {
       films.value.push(film.value);
-      contenu.value = film.value;
     }
     
 
