@@ -68,7 +68,7 @@ const router = createRouter({
         {
             path: '/exercice_style_dynamique',
             name: 'exercice_style_dynamique',
-            component: () => import('../views/exercices/exercice_style_dynamique.vue')
+            component: () => import('../views/exercices/vue_dynamic_styling.vue')
         }
     ]
 });

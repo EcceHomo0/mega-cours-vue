@@ -5,7 +5,7 @@
   </section>
   </br>
   <section>
-    <div id="card1bis" :style="active1 ? {backgroundColor: 'red', color:'white'} : { backgroundColor: 'gray', color: 'black'}" @click="active1 = !active1"> Card 1 bis</div>
+    <div id="card1bis" :style="active1 ? {backgroundColor: 'red'} : { backgroundColor: 'gray'}" @click="active1 = !active1"> Card 1 bis</div>
     <div id="card2bis" :style="active2 ? {backgroundColor: 'yellow', color:'black'} : { backgroundColor: 'green', color: 'white'}" @click="active2 = !active2">Card 2 bis</div>
   </section>
 </template>
