@@ -29,12 +29,12 @@
     import { ref } from 'vue';
     const films = ref([]);
     const film = ref('');
+    const contenu = ref('Pas encore de films dans votre liste ? Veuillez en ajouter un.');
     function ajouterFilm() {
       films.value.push(film.value);
       contenu.value = film.value;
-      film.value = ''; // optionnel : vide le champ après ajout
     }
-    const contenu = ref('Pas encore de films dans votre liste ? Veuillez en ajouter un.');
+    
 
     
 
