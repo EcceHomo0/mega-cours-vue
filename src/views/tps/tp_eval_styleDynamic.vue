@@ -5,7 +5,7 @@
     <input id="input2" placeholder="Entrez votre texte ici" v-model="couleur"></input>
     <h2 id="h2_2" :style="{ color: couleur }">Hello World (couleur dynamique)</h2>
     <br></br>
-    <button class="btn btn-primary" @click="visible = !visible">Afficher 1er Titre</button>
+    <button class="btn btn-primary" @click="estInvisible = !estInvisible">Afficher 1er Titre</button>
 </template>
 
 
