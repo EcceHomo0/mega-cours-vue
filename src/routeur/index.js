@@ -74,6 +74,11 @@ const router = createRouter({
             path: '/tp_DynamicStyling',
             name: 'tp_DynamicStyling',
             component: () => import('../views/tps/tp_eval_styleDynamic.vue')
+        },
+        {
+            path: '/exercice_v_if',
+            name: 'exercice_v_if',
+            component: () => import('../views/exercices/exercice_v_if.vue')
         }
     ]
 });
