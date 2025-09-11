@@ -69,6 +69,11 @@ const router = createRouter({
             path: '/exercice_style_dynamique',
             name: 'exercice_style_dynamique',
             component: () => import('../views/exercices/vue_dynamic_styling.vue')
+        },
+        {
+            path: '/tp_DynamicStyling',
+            name: 'tp_DynamicStyling',
+            component: () => import('../views/tps/tp_eval_styleDynamic.vue')
         }
     ]
 });
