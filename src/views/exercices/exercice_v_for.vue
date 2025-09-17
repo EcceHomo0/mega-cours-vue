@@ -17,7 +17,7 @@
 
             <h3 v-if="films.length" class="text-xl font-semibold mb-2">
               <ul>
-                <li v-for="(film, index) in films">{{ index+1 }}. {{ film }}</li>
+                <li v-for="(film, index) in films" @click="supprimerFilm(index)">{{ index+1 }}. {{ film }}</li>
               </ul>
             </h3>
             <p v-else class="text-gray-500">
@@ -36,6 +36,10 @@
 
     function ajouterFilm() {
       films.value.push(film.value);
-    }  
+    }
+
+    function supprimerFilm(index) {
+      films.value.splice(index, 1);
+    }
 
 </script>

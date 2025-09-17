@@ -84,6 +84,11 @@ const router = createRouter({
             path: '/exercice_v_for',
             name: 'exercice_v_for',
             component: () => import('../views/exercices/exercice_v_for.vue')
+        },
+        {
+            path: '/injection_props',
+            name: 'injection_props',
+            component: () => import('../views/exercices/injection_props.vue')
         }
     ]
 });
