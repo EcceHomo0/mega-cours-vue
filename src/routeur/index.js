@@ -89,6 +89,11 @@ const router = createRouter({
             path: '/injection_props',
             name: 'injection_props',
             component: () => import('../views/exercices/injection_props.vue')
+        },
+        {
+            path: '/component_communication',
+            name: 'communication_composants',
+            component: () => import('../views/tps/communication composants/tp-component-communication.vue')
         }
     ]
 });
